@@ -560,7 +560,7 @@ table {
 		max-height: 300px;
 	}
     .banner{
-        background-image: url(/images/header_mobile.png);
+        background-image: url(../images/header_mobile.png);
     }
     .content{
         flex-direction: column;
