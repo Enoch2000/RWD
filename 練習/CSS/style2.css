@@ -1,0 +1,443 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #EFE9E7 ;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: "Microsoft JhengHei", "微軟正黑體";
+    
+}
+
+.banner {
+    background-image: url(/images/header_desktop.png);
+    height: 420px;
+    width: 100%;
+    background-position: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    height: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.header h2 a {
+    background-image: url(/images/logo_w\(null\).svg);
+    width: 120px;
+    height: 24px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header ul {
+    display: flex;
+
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.showmenu {
+    border: none;
+    background: transparent;
+    color: wheat;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+}
+
+.banner-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    text-align: center;
+
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+.banner-content p {
+    line-height: 1.2;
+}
+
+/* 中間區塊*/
+.login-brand{
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.login-brand img{
+    margin-bottom: 5px;
+}
+.login-brand h2{
+    color: #3D1101;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-card{
+    border-top:3px solid #FF5E45;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.login-card h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #3D1101;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.input-group{
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+.login-form label{
+    display: block;
+    margin-bottom: 3px;
+    color: #3D1101;
+    font-weight: bold;
+}
+.input-group i{
+    position: absolute;
+    left: 4px;
+    top: 7px;
+    font-size: 15px;
+}
+.input-group input{
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-left:25px
+}
+.login-form a{
+    text-decoration: none;
+    color: #FF5E45;
+}
+.forget{
+    margin-bottom: 10px;
+}
+.form-actions{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.form-actions a{
+    color: white;
+    background: gray;
+    padding: 5px 0;
+    flex: 1;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+}
+.form-actions button{
+    flex: 1;
+    color: white;
+    background: #F56C23 ;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px 0;
+}
+/*表尾*/
+.footer {
+    display: flex;
+    padding: 42px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.footer-about {
+    flex: 1.3;
+
+}
+
+.footer-contact {
+    flex: 1;
+}
+
+.footer-social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer h2 {
+    color: #3D1101;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    line-height: 1.3;
+    font-size: 18px;
+    color: #3D1101;
+}
+
+.footer-social h3 {
+    font-weight: 900;
+    color: #3D1101;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.google {
+    font-size: 20px;
+    color: white;
+    background: #DB4437;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.twitter {
+    font-size: 20px;
+    color: white;
+    background: #41ABE1;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.facebook {
+    font-size: 20px;
+    color: white;
+    background: #3A5795 ;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+@media(max-width:1000px) {
+    .product-card {
+        width: calc((100% - 20px)/ 2);
+    }
+}
+
+@media(max-width:767px){
+    .header{
+        width: 100%;
+        top: 0;
+        align-items: center;
+        padding: 15px;
+
+    }
+    .header ul{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
+        position: absolute;
+        top: 57px;
+        left: 0;
+		right: 0;
+        flex-direction: column;
+    }
+    .header li{
+        text-align: center;
+        background: black;
+        
+    }
+    .header li a{
+        display: block;
+    }
+    .header li a:hover{
+        color: gray;
+        background: rgba(0, 0, 0, 0.35);
+    }
+    .header li:hover{
+        background: rgba(0, 0, 0, 0.35);
+    }
+    .showmenu{
+        display: block;
+        color: white;
+        font-size: 25px;
+        
+    }
+    .menu-show .header ul{
+		max-height: 300px;
+	}
+    .banner{
+        background-image: url(/images/header_mobile.png);
+    }
+    .footer{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-social h3{
+        text-align: right;
+        
+    }
+}

@@ -1,0 +1,705 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+        background: #EFE9E7;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+
+    .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        font-family: "Microsoft JhengHei", "微軟正黑體";
+
+    }
+
+    .banner {
+        background-image: url(/images/header_desktop.png);
+        height: 420px;
+        width: 100%;
+        background-position: center;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        background: rgba(0, 0, 0, 0.6);
+        height: 56px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .header h2 a {
+        background-image: url(/images/logo_w\(null\).svg);
+        width: 120px;
+        height: 24px;
+        display: block;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .header ul {
+        display: flex;
+
+    }
+
+    .header li a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .showmenu {
+        border: none;
+        background: transparent;
+        color: wheat;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0;
+        display: none;
+    }
+
+    .banner-content {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.35);
+        color: white;
+        text-align: center;
+
+    }
+
+    .banner-content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+
+    }
+
+    .banner-content p {
+        line-height: 1.2;
+    }
+
+    /* 中間區塊*/
+    .features {
+        margin-bottom: 20px;
+    }
+
+    .features-title h2 {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 25px;
+        color: #3D1101;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .features-title h2::before,
+    .features-title h2::after {
+        content: "";
+        width: 150px;
+        height: 1px;
+        background: #979797;
+    }
+
+    .features-title {
+        margin-bottom: 30px;
+    }
+
+    .item-img {
+        border-radius: 50%;
+        max-width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .feature-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .feature-item {
+        color: #3D1101;
+        margin: 20px;
+        text-align: center;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-item h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .feature-item p {
+        text-align: left;
+        line-height: 1.2;
+        width: 100%;
+    }
+
+    /*主廚區*/
+    .chef {
+        background: #000;
+        display: flex;
+        padding: 0 30px;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .chef-img img {
+        display: block;
+        max-width: 470px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 460px;
+    }
+
+    .chef-content {
+        color: white;
+        max-width: 410px;
+        width: 100%;
+    }
+
+    .chef-name {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .chef-content h3 {
+        margin-bottom: 20px;
+    }
+
+    .chef-content p {
+        line-height: 1.2;
+        display: block;
+    }
+
+    /*主廚區結束*/
+
+
+    /*顧客區*/
+    .reviews {
+        color: #3D1101;
+        padding: 20px;
+    }
+
+    .review-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .review-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .review-item {
+        display: flex;
+        gap: 5px;
+        max-width: 300px;
+
+
+    }
+
+    .review-avatar img {
+        border-radius: 50%;
+        object-fit: cover;
+        max-width: 67px;
+        height: 67px;
+        display: block;
+
+
+    }
+
+    .review-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-content h2 {
+        font-size: 18px;
+        height: 67px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .review-content p {
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .review-content h3 {
+        text-align: right;
+        color: #3D1101 75%;
+    }
+
+    /*顧客區結束*/
+
+    /*訂位區*/
+    .reservation {
+        background: #FAFAFA 70%;
+        padding: 40px;
+    }
+
+    .reservation-title {
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 24px;
+        color: #3D1101;
+    }
+
+    .reservation-content {
+        display: flex;
+        gap: 15px;
+    }
+
+    .reservation-map img {
+        display: block;
+        width: 100%;
+        max-width: 462px;
+        height: auto;
+    }
+
+    .reservation-form {
+        flex: 1;
+    }
+
+    .reservation-form label,
+    .reservation-form input {
+        display: block;
+    }
+
+    .from-group label {
+        margin-bottom: 10px;
+        color: #3D1101;
+    }
+
+    .from-group input {
+        height: 32px;
+        padding: 10px;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 16px;
+        
+    }
+
+    .vegetraian-options legend {
+        margin-bottom: 10px;
+        color: #3D1101;
+    }
+
+    .vegetraian-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        color: #3D1101;
+    }
+
+    .vegetraian-group input {
+        margin-right: 46px;
+    }
+
+    .form-actions {
+        text-align: right;
+    }
+
+    .form-actions button {
+        padding: 3px 20px;
+        color: white;
+        border: 1px solid gray;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .reset {
+        margin-right: 10px;
+        background: gray;
+    }
+
+    .actions {
+        background: #F56C23 100%;
+    }
+
+    /*訂位區結束*/
+
+
+    /*表尾*/
+    .footer {
+        display: flex;
+        padding: 42px;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+
+    .footer-about {
+        flex: 1.3;
+
+    }
+
+    .footer-contact {
+        flex: 1;
+    }
+
+    .footer-social {
+        flex: 1;
+        text-align: right;
+    }
+
+    .footer h2 {
+        color: #3D1101;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        line-height: 1.3;
+        font-size: 18px;
+        color: #3D1101;
+    }
+
+    .footer-social h3 {
+        font-weight: 900;
+        color: #3D1101;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-social ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .google {
+        font-size: 20px;
+        color: white;
+        background: #DB4437;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+    .twitter {
+        font-size: 20px;
+        color: white;
+        background: #41ABE1;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+    .facebook {
+        font-size: 20px;
+        color: white;
+        background: #3A5795;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+    @media(max-width:1000px) {
+        .chef {
+            padding: 0 10px;
+        }
+
+        .chef-img img {
+            width: 373px;
+            object-position: right;
+        }
+
+        .reservation-map img {
+            width: 363px;
+            height: 380px;
+        }
+
+        .reservation {
+            padding: 40px 10px;
+        }
+
+        .footer {
+            padding: 10px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .header {
+            width: 100%;
+            top: 0;
+            align-items: center;
+            padding: 15px;
+
+        }
+
+        .header ul {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s;
+            position: absolute;
+            top: 57px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+        }
+
+        .header li {
+            text-align: center;
+            background: black;
+
+        }
+
+        .header li a {
+            display: block;
+        }
+
+        .header li a:hover {
+            color: gray;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .header li:hover {
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .showmenu {
+            display: block;
+            color: white;
+            font-size: 25px;
+
+        }
+
+        .menu-show .header ul {
+            max-height: 300px;
+        }
+
+        .banner {
+            background-image: url(/images/header_mobile.png);
+        }
+
+
+        .footer {
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .footer-social h3 {
+            text-align: right;
+
+        }
+
+        .feature-list {
+            width: 100%;
+            flex-wrap: wrap;
+
+        }
+
+        .feature-item {
+            max-width: none;
+            width: 100%;
+            padding: 0 20px;
+            align-items: center;
+        }
+
+        .features-title h2::before,
+        .features-title h2::after {
+            display: none;
+        }
+
+        .chef {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .chef-img {
+            width: 100%;
+
+        }
+
+        .chef-img img {
+            width: 100%;
+            max-width: none;
+            height: 460px;
+        }
+
+        .chef-content {
+            padding: 20px;
+        }
+
+        .review-list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reservation-content {
+            flex-direction: column;
+        }
+        .reservation-map{
+            width: 380px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .reservation-map img{
+            margin: 0 auto;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
